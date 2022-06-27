@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: local('Gotham-Bold'), url(../../fonts/GothamSSm-Bold_Web.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Gotham-Book';
+    src: local('Gotham-Book'), url(../../fonts/GothamSSm-Book_Web.woff2);
+  }
+  @font-face {
+    font-family: 'Gotham-Light';
+    src: local('Gotham-Light'), url(../../fonts/GothamSSm-Light_Web.woff2);
+  }
+  @font-face {
+    font-family: 'Gotham-Medium';
+    src: local('Gotham-Medium'), url(../../fonts/GothamSSm-Medium_Web.woff2);
+  }
+
 .container{
     background-color: white;
     background-repeat: no-repeat;
@@ -7,6 +24,11 @@
     display: flex;
     background-position: center;
 }
+
+/* .sectionWrap{
+    height: 80%;
+    background-color: rgba(55, 55, 55, .7);
+} */
 
 .model3{
     background-image: url('../../img/M3-Homepage-Desktop-LHD.jfif');
@@ -21,6 +43,38 @@
     background-image: url('../../img/Desktop-ModelY.jfif');
 }
 
-.orderButton{
+.topService{
+    padding: 10% 0 55vh 0;
+}
+.service{
+    font-family: "Gotham-Medium";
+    font-size: 36px;
+    margin: 30px;
+}
+.nameDescription{
+    font-family: "Gotham-Light";
+    font-size: 14px;
+    margin: 15px;
+}
+
+.serviceButton{
     z-index: 2;
+    font-family: 'Gotham-Book';
+    font-size: 12px;
+    padding: 10px 50px;
+    width: 260px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.buttonWrap{
+    display: flex;
+    justify-content: space-around;
+}
+.orderButton{
+    background-color: #171A20CC;
+    color: white;
+}
+.inventoryButton{
+    background-color: #F4F4F4A6;
+    color: black;
 }

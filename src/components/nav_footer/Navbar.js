@@ -11,7 +11,6 @@ export default function Navbar() {
       <div className="navbarOver">
         <div className="navLogo">
           <TeslaLogo />
-          {/* <p>TESLA</p> */}
         </div>
         <div>
           <ul className="navServices">
