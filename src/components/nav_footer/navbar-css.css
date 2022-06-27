@@ -32,12 +32,13 @@
 }
 .navLogo{
     width: 120px;
+    margin: 5px 0 0 10px;
 }
 .navbarOver{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 15px 0px 15px;
+    padding: 40px 15px 0px 15px;
     height: 50px;
 }
 .navServices{

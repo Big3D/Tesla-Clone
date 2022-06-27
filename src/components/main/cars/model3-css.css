@@ -16,7 +16,7 @@
   }
 
 .container{
-    background-color: white;
+    background-color: red;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -42,6 +42,15 @@
 .modelY{
     background-image: url('../../img/Desktop-ModelY.jfif');
 }
+.solarPanel{
+    background-image: url('../../img/_25-HP-SolarPanels-D.jfif');
+}
+.solarRoof{
+    background-image: url('../../img/HP-SR-Design-D.jfif');
+}
+.accessory{
+    background-image: url('../../img/dd739764-bcaa-4263-9488-8c73bc9fb046.jfif');
+}
 
 .topService{
     padding: 10% 0 55vh 0;
@@ -54,7 +63,7 @@
 .nameDescription{
     font-family: "Gotham-Light";
     font-size: 14px;
-    margin: 15px;
+    margin: 10px;
 }
 
 .serviceButton{
