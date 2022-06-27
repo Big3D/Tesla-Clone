@@ -1,0 +1,26 @@
+.container{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background-position: center;
+}
+
+.model3{
+    background-image: url('../../img/M3-Homepage-Desktop-LHD.jfif');
+}
+.modelS{
+    background-image: url('../../img/Homepage-Model-S-Desktop-LHD.jfif');
+}
+.modelX{
+    background-image: url('../../img/Homepage-Model-X-Desktop-LHD.jfif');
+}
+.modelY{
+    background-image: url('../../img/Desktop-ModelY.jfif');
+}
+
+.orderButton{
+    z-index: 2;
+}

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: local('Gotham-Bold'), url(../fonts/GothamSSm-Bold_Web.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Gotham-Book';
+    src: local('Gotham-Book'), url(../fonts/GothamSSm-Book_Web.woff2);
+  }
+  @font-face {
+    font-family: 'Gotham-Light';
+    src: local('Gotham-Light'), url(../fonts/GothamSSm-Light_Web.woff2);
+  }
+  @font-face {
+    font-family: 'Gotham-Medium';
+    src: local('Gotham-Medium'), url(../fonts/GothamSSm-Medium_Web.woff2);
+  }
+
+.navbar{
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    max-height: 20px;
+    text-align: center;
+    padding: 16px;
+    overflow: visible;
+    z-index: 1;
+}
+.whiteNav{
+    font-family: 'Gotham-Light';
+    font-size: 14px;
+    text-decoration: underline;
+}
+.navLogo{
+    width: 120px;
+}
+.navbarOver{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 56px;
+}
+.navServices{
+    display: flex;
+    padding: 0 15px 0 130px;
+    list-style-type: none;
+    
+}
+.serviceItem{
+    padding: 0 15px 0 15px;
+}
+.navText{
+    font-family: 'Gotham-Medium';
+    font-size: 14px;
+}
+.webNav{
+    display: flex;
+    list-style-type: none;
+    padding: 0 35px 0 0;
+}
+.webItem{
+    padding: 0 10px 0 10px;
+}
+
+.test{
+    background-color: blueviolet;
+    height: 150px;
+    width: 150px;
+    
+}
