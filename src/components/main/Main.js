@@ -3,74 +3,80 @@ import Navbar from "../nav_footer/Navbar";
 import { serviceData } from "./serviceData";
 import Cars from "./cars/Cars";
 import "../main/cars/model3-css.css";
-import { scroller, Element, animateScroll as scroll } from "react-scroll";
-
-// import { Section } from "react-scroll-section";
+import { scroller, Element, scrollSpy } from "react-scroll";
 import { useState, useRef } from "react";
-// import { useScrollSections } from "react-scroll-section";
 
-let serviceComponents = serviceData.map((data) => {
-  return <Cars data={data} key={data.id} />;
-});
+
 
 export default function Main() {
   const [useScroll, setUseScroll] = useState(0);
   const [scrolling, setScrolling] = useState(false);
-  // const sections = useScrollSections();
   const scrollContent = useRef();
   const [timeoutId, setTimeoutId] = useState(0);
   const [currElement, setCurrElement] = useState(0);
+  // const [currView, setCurrView]
+
+  let serviceComponents = serviceData.map((data, i) => {
+    return <Cars data={data} key={data.id} currElement={currElement} index={i} setCurrElement={setCurrElement} scrolling={scrolling}/>;
+  });
 
   function handleScroll(e) {
+    
     e.preventDefault();
+    // console.log(scrollSpy)
+    // clearing timeout to prevent scroll while already scrolling
     clearTimeout(timeoutId);
     setTimeoutId(0);
+    // console.log(currElement)
+    
 
-    // let currentSection;
-
-    // sections.forEach((element, index) => {
-    //   if (element.selected === true) {
-    //     currentSection = index;
-    //   }
-    // });
-
-    //sections.filter((section, index)=> section.selected === true && index)
     let currentYOffset = scrollContent.current.scrollTop;
-    // console.log('handle ran')
-    // console.log(currentSection)
+    // console.log(currentYOffset)
+    // console.log(useScroll)
+
     if (!scrolling) {
       setScrolling(true);
-      if (currentYOffset > useScroll) {
-        if (currElement + 1 !== serviceData.length) {
-          scroller.scrollTo(serviceData[currElement + 1].id, {
-            duration: 800,
-            delay: 0,
-            smooth: "easeInOut",
-            containerId: "scrollContainer"
-          });
-          setCurrElement(currElement + 1);
-        }
-        console.log(serviceData[currElement + 1])
-      }
-      else {
-        if (currElement - 1 >= 0) {
-          scroller.scrollTo(serviceData[currElement - 1].id, {
-            duration: 800,
-            delay: 0,
-            smooth: "easeInOut",
-            containerId: "scrollContainer"
-          });
-          setCurrElement(currElement - 1);
-        }
-      }
-        
+      console.log(currElement);
+      //// This is the hard way to try and do this effect on a scroll event////
+      // if (currentYOffset > useScroll) {
+      //   if (currElement + 1 !== serviceData.length) {
+      //     //scrolls to the next element in the array
+      //     scroller.scrollTo(serviceData[currElement + 1].id, {
+      //       duration: 800,
+      //       delay: 0,
+      //       smooth: "easeInOut",
+      //       containerId: "scrollContainer",
+      //     });
+      //     scrollSpy.update();
+      //     setCurrElement(currElement + 1);
+      //     console.log("Scroll Down")
+      //   }
+      //   // console.log(serviceData[currElement + 1]);
+      // } else if (currentYOffset < useScroll){
+      //   if (currElement - 1 >= 0) {
+      //     // scrolls to the previous element in the array
+      //     scroller.scrollTo(serviceData[currElement - 1].id, {
+      //       duration: 800,
+      //       delay: 0,
+      //       smooth: "easeInOut",
+      //       containerId: "scrollContainer",
+      //     });
+      //     scrollSpy.update();
+      //     setCurrElement(currElement - 1);
+      //     console.log("Scroll Up")
+      //   }
+      // }
       
     }
+    
+
+    setUseScroll(currentYOffset);
     let tOId = setTimeout(() => {
       setScrolling(false);
-    }, 300);
+    }, 800);
     setTimeoutId(tOId);
-    setUseScroll(currentYOffset);
+
+        
   }
 
   return (

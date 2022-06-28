@@ -64,6 +64,7 @@
     font-family: "Gotham-Light";
     font-size: 14px;
     margin: 10px;
+    pointer-events: default;
 }
 
 .serviceButton{
@@ -74,6 +75,7 @@
     width: 260px;
     border-radius: 25px;
     text-decoration: none;
+    pointer-events: default;
 }
 .buttonWrap{
     display: flex;

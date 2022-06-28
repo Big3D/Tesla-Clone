@@ -17,13 +17,16 @@
 
 .navbar{
     position: fixed;
-    background-color: white;
     width: 100vw;
-    max-height: 50px;
     text-align: center;
-    padding: 16px;
     overflow: visible;
     z-index: 1;
+    /* border: 2px solid blue; */
+}
+.navbarWhite{
+    background-color: white;
+    height: 50px;
+    padding: 16px;    
 }
 .whiteNav{
     font-family: 'Gotham-Light';
@@ -38,18 +41,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 15px 0px 15px;
+    padding: 10px 15px 0px 15px;
     height: 50px;
 }
 .navServices{
     display: flex;
     padding: 0 15px 0 130px;
     list-style-type: none;
-    
 }
 .serviceItem{
-    padding: 0 15px 0 15px;
+    padding: 5px 15px;
+    font-family: 'Gotham-Medium';
+    font-size: 14px;
 }
+
 .navText{
     font-family: 'Gotham-Medium';
     font-size: 14px;
@@ -60,12 +65,16 @@
     padding: 0 35px 0 0;
 }
 .webItem{
-    padding: 0 10px 0 10px;
+    padding: 5px 15px;
 }
 
 .test{
     background-color: blueviolet;
     height: 150px;
-    width: 150px;
-    
+    width: 150px;    
+}
+
+.indicator{    
+    z-index: -1;
+    transition: none;
 }
