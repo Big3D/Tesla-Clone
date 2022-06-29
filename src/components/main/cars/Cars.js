@@ -3,13 +3,12 @@ import styled from "styled-components";
 import { Element } from "react-scroll";
 import { useInView } from "react-intersection-observer";
 import { scroller } from "react-scroll";
+import Footer from "../../nav_footer/Footer";
 
-// import { useState } from "react";
-
+//// Styled component
 const CarSection = styled.div`
-  /* background-color: darkblue; */
   text-align: center;
-  width: 600px;
+  width: 800px;
   height: 100vh;
   margin: auto;
   justify-content: space-between;
@@ -19,34 +18,48 @@ const CarSection = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: ${(props) => (props.showMe ? "1" : "0")};
-  transition: opacity 1.3s;
+  transition: opacity 0.6s ease-in 0.5s;
   pointer-events: none;
 `;
 
 export default function Cars({
-  data: { title, id, img, titleDesc, titleDescLink, buttonLink1, buttonLink2 },
-  index, scrolling,
-  currElement, setCurrElement
+  data: {
+    title,
+    id,
+    img,
+    titleDesc,
+    titleDescLink,
+    buttonLink1,
+    buttonLink2,
+    showFooter,
+  },
+  index,
+  scrolling,
+  currElement,
+  setCurrElement,
 }) {
-  const { ref, inView, entry } = useInView({threshold: .1});
+  const { ref, inView, entry } = useInView({ threshold: 0.1 });
+  //// Moves the current selected element into view
   useEffect(() => {
-    if(inView ){
+    if (inView) {
       scroller.scrollTo(id, {
         duration: 800,
         delay: 0,
         smooth: "easeInOut",
         containerId: "scrollContainer",
-      })
-      setCurrElement(index)
+      });
+      setCurrElement(index);
     }
   }, [scrolling, setCurrElement, index, id, inView, entry]);
 
+  //// The main container for all the services on the front page.
   return (
-    <Element name={id} className={`${img} container`} >
-      {index}
-      {currElement}
-      <div style={{height:"100vh", width:"100%", position:"absolute"}} ref={ref}/>
-      <CarSection showMe={index == currElement ? true : false} >
+    <Element name={id} className={`${img} container`}>
+      <div
+        style={{ height: "100vh", width: "100%", position: "absolute" }}
+        ref={ref}
+      />
+      <CarSection showMe={index == currElement ? true : false}>
         <div className="topService">
           <span className="service">{title}</span>
           <p className="nameDescription">
@@ -76,6 +89,7 @@ export default function Cars({
             </a>
           )}
         </div>
+        {showFooter ? <Footer /> : ""}
       </CarSection>
     </Element>
   );

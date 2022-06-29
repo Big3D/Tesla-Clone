@@ -52,12 +52,16 @@
     background-image: url('../../img/dd739764-bcaa-4263-9488-8c73bc9fb046.jfif');
 }
 
+a{
+    color: black;
+    pointer-events: default;
+}
 .topService{
-    padding: 10% 0 55vh 0;
+    padding: 10% 0.5vw 54vh 0;
 }
 .service{
     font-family: "Gotham-Medium";
-    font-size: 36px;
+    font-size: 38px;
     margin: 30px;
 }
 .nameDescription{
@@ -71,7 +75,7 @@
     z-index: 2;
     font-family: 'Gotham-Book';
     font-size: 12px;
-    padding: 10px 50px;
+    padding: 12px 50px;
     width: 260px;
     border-radius: 25px;
     text-decoration: none;
@@ -80,6 +84,7 @@
 .buttonWrap{
     display: flex;
     justify-content: space-around;
+    padding: 40px 110px;
 }
 .orderButton{
     background-color: #171A20CC;

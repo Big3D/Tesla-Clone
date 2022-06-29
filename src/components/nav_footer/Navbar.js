@@ -15,6 +15,7 @@ let navLinks = [
 ];
 
 export default function Navbar() {
+  //// All states used
   const [hoveredNav, setHoveredNav] = useState(false);
   const elementRef = useRef(navLinks.map(() => createRef()));
   const [softSlide, setSoftSlide] = useState({});
@@ -22,9 +23,10 @@ export default function Navbar() {
   const [transitioned, setTransitioned] = useState(false);
 
   useEffect(() => {
-    console.log(hoveredNav)
+    //// Checks to see if the Navbar is hovered over
+    //// Default properties of the Hover effect
     if (!hoveredNav) {
-      console.log('useEffect Ran')
+      
       setSoftSlide({
         position: "absolute",
         opacity: "0",
@@ -39,30 +41,33 @@ export default function Navbar() {
   }, [hoveredNav]);
 
   function handleHover(hoveredItem) {
+
+    //// Saved code snippet for getting the opacity of a useRef item
     // console.log(window.getComputedStyle(indicateRef.current).getPropertyValue("opacity"));
     
+    //// Checks to see if this is the first time you are hovering 
     if (transitioned) {
+      //// Creates a variable that holds the information for the NavHover effect
       let transformObject = {
         width: hoveredItem.current.getBoundingClientRect().width,
-        backgroundColor: "grey",
-        height: hoveredItem.current.getBoundingClientRect().height,
+        height: "32px",
         borderRadius: "25px",
         position: "absolute",
         left: 0,
         transform: `translateX(${
           hoveredItem.current.getBoundingClientRect().x
         }px)`,
-        transition: "transform 0.5s cubic-bezier(.72, 0.27, 0.39, 0.3)",
+        transition: "transform 0.5s cubic-bezier(.75, 0, 0, 1)",
         opacity: "0.5",
       };
       setSoftSlide(transformObject);
     }
+    //// If you havent left the navbar then this keeps the Hover effect in place
     else {
       // setHoveredNav(true);
       let transformObject = {
         width: hoveredItem.current.getBoundingClientRect().width,
-        backgroundColor: "grey",
-        height: hoveredItem.current.getBoundingClientRect().height,
+        height: "32px",
         borderRadius: "25px",
         position: "absolute",
         left: 0,
@@ -76,11 +81,12 @@ export default function Navbar() {
       setTransitioned(true)
     }
   }
+
+  //// Sets the Hover effect back to an "invisible" state
   function handleHoverOff(hoverItem) {
     let removeOpacity = {
       width: hoverItem.current.getBoundingClientRect().width,
-      backgroundColor: "grey",
-      height: hoverItem.current.getBoundingClientRect().height,
+      height: "32px",
       borderRadius: "25px",
       position: "absolute",
       left: 0,
@@ -90,6 +96,7 @@ export default function Navbar() {
     };
     setSoftSlide(removeOpacity);
   }
+  
   return (
     <div className="navbar">
       <div className="navbarWhite">

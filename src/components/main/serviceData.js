@@ -75,6 +75,7 @@ export const serviceData = [
         // titleDescLink: "",
         buttonLink1: "SHOP NOW",
         // buttonLink2: "",
+        showFooter: true,
 
     },
 ]
