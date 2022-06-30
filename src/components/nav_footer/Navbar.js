@@ -26,7 +26,6 @@ export default function Navbar() {
     //// Checks to see if the Navbar is hovered over
     //// Default properties of the Hover effect
     if (!hoveredNav) {
-      
       setSoftSlide({
         position: "absolute",
         opacity: "0",
@@ -37,15 +36,13 @@ export default function Navbar() {
         transition: "none",
       });
     }
-    
   }, [hoveredNav]);
 
   function handleHover(hoveredItem) {
-
     //// Saved code snippet for getting the opacity of a useRef item
     // console.log(window.getComputedStyle(indicateRef.current).getPropertyValue("opacity"));
-    
-    //// Checks to see if this is the first time you are hovering 
+
+    //// Checks to see if this is the first time you are hovering
     if (transitioned) {
       //// Creates a variable that holds the information for the NavHover effect
       let transformObject = {
@@ -78,7 +75,7 @@ export default function Navbar() {
         opacity: "0.5",
       };
       setSoftSlide(transformObject);
-      setTransitioned(true)
+      setTransitioned(true);
     }
   }
 
@@ -96,7 +93,7 @@ export default function Navbar() {
     };
     setSoftSlide(removeOpacity);
   }
-  
+
   return (
     <div className="navbar">
       <div className="navbarWhite">
@@ -106,7 +103,7 @@ export default function Navbar() {
         className="navbarOver"
         onMouseEnter={() => {
           setHoveredNav(true);
-          console.log('Nav hovering')
+          console.log("Nav hovering");
         }}
         onMouseLeave={() => {
           setHoveredNav(false);
