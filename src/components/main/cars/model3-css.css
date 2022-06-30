@@ -1,96 +1,107 @@
 @font-face {
-    font-family: 'Gotham-Bold';
-    src: local('Gotham-Bold'), url(../../fonts/GothamSSm-Bold_Web.woff2) format('woff2');
-  }
-  @font-face {
-    font-family: 'Gotham-Book';
-    src: local('Gotham-Book'), url(../../fonts/GothamSSm-Book_Web.woff2);
-  }
-  @font-face {
-    font-family: 'Gotham-Light';
-    src: local('Gotham-Light'), url(../../fonts/GothamSSm-Light_Web.woff2);
-  }
-  @font-face {
-    font-family: 'Gotham-Medium';
-    src: local('Gotham-Medium'), url(../../fonts/GothamSSm-Medium_Web.woff2);
-  }
-
-.container{
-    background-color: red;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    background-position: center;
+  font-family: "Gotham-Bold";
+  src: local("Gotham-Bold"),
+    url(../../fonts/GothamSSm-Bold_Web.woff2) format("woff2");
 }
 
-/* .sectionWrap{
-    height: 80%;
-    background-color: rgba(55, 55, 55, .7);
-} */
-
-.model3{
-    background-image: url('../../img/M3-Homepage-Desktop-LHD.jfif');
-}
-.modelS{
-    background-image: url('../../img/Homepage-Model-S-Desktop-LHD.jfif');
-}
-.modelX{
-    background-image: url('../../img/Homepage-Model-X-Desktop-LHD.jfif');
-}
-.modelY{
-    background-image: url('../../img/Desktop-ModelY.jfif');
-}
-.solarPanel{
-    background-image: url('../../img/_25-HP-SolarPanels-D.jfif');
-}
-.solarRoof{
-    background-image: url('../../img/HP-SR-Design-D.jfif');
-}
-.accessory{
-    background-image: url('../../img/dd739764-bcaa-4263-9488-8c73bc9fb046.jfif');
+@font-face {
+  font-family: "Gotham-Book";
+  src: local("Gotham-Book"), url(../../fonts/GothamSSm-Book_Web.woff2);
 }
 
-a{
-    color: black;
-    pointer-events: default;
-}
-.topService{
-    padding: 10% 0.5vw 54vh 0;
-}
-.service{
-    font-family: "Gotham-Medium";
-    font-size: 38px;
-    margin: 30px;
-}
-.nameDescription{
-    font-family: "Gotham-Light";
-    font-size: 14px;
-    margin: 10px;
-    pointer-events: default;
+@font-face {
+  font-family: "Gotham-Light";
+  src: local("Gotham-Light"), url(../../fonts/GothamSSm-Light_Web.woff2);
 }
 
-.serviceButton{
-    z-index: 2;
-    font-family: 'Gotham-Book';
-    font-size: 12px;
-    padding: 12px 50px;
-    width: 260px;
-    border-radius: 25px;
-    text-decoration: none;
-    pointer-events: default;
+@font-face {
+  font-family: "Gotham-Medium";
+  src: local("Gotham-Medium"), url(../../fonts/GothamSSm-Medium_Web.woff2);
 }
-.buttonWrap{
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 110px;
+
+.container {
+  background-color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  background-position: center;
 }
-.orderButton{
-    background-color: #171A20CC;
-    color: white;
+
+.model3 {
+  background-image: url("../../img/M3-Homepage-Desktop-LHD.jfif");
 }
-.inventoryButton{
-    background-color: #F4F4F4A6;
-    color: black;
+
+.modelS {
+  background-image: url("../../img/Homepage-Model-S-Desktop-LHD.jfif");
+}
+
+.modelX {
+  background-image: url("../../img/Homepage-Model-X-Desktop-LHD.jfif");
+}
+
+.modelY {
+  background-image: url("../../img/Desktop-ModelY.jfif");
+}
+
+.solarPanel {
+  background-image: url("../../img/_25-HP-SolarPanels-D.jfif");
+}
+
+.solarRoof {
+  background-image: url("../../img/HP-SR-Design-D.jfif");
+}
+
+.accessory {
+  background-image: url("../../img/dd739764-bcaa-4263-9488-8c73bc9fb046.jfif");
+}
+
+a {
+  color: black;
+  pointer-events: default;
+}
+
+.topService {
+  padding: 10% 0.5vw 54vh 0;
+}
+
+.service {
+  font-family: "Gotham-Medium";
+  font-size: 38px;
+  margin: 30px;
+}
+
+.nameDescription {
+  font-family: "Gotham-Light";
+  font-size: 14px;
+  margin: 10px;
+  pointer-events: default;
+}
+
+.serviceButton {
+  z-index: 2;
+  font-family: "Gotham-Book";
+  font-size: 12px;
+  padding: 12px 50px;
+  width: 260px;
+  border-radius: 25px;
+  text-decoration: none;
+  pointer-events: default;
+}
+
+.buttonWrap {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 110px;
+}
+
+.orderButton {
+  background-color: #171a20cc;
+  color: white;
+}
+
+.inventoryButton {
+  background-color: #f4f4f4a6;
+  color: black;
 }

@@ -48,7 +48,7 @@ export default function Navbar() {
       let transformObject = {
         width: hoveredItem.current.getBoundingClientRect().width,
         height: "32px",
-        borderRadius: "25px",
+        borderRadius: "12px",
         position: "absolute",
         left: 0,
         transform: `translateX(${
@@ -65,7 +65,7 @@ export default function Navbar() {
       let transformObject = {
         width: hoveredItem.current.getBoundingClientRect().width,
         height: "32px",
-        borderRadius: "25px",
+        borderRadius: "12px",
         position: "absolute",
         left: 0,
         transform: `translateX(${
@@ -84,7 +84,7 @@ export default function Navbar() {
     let removeOpacity = {
       width: hoverItem.current.getBoundingClientRect().width,
       height: "32px",
-      borderRadius: "25px",
+      borderRadius: "12px",
       position: "absolute",
       left: 0,
       transform: `translateX(${hoverItem.current.getBoundingClientRect().x}px)`,
