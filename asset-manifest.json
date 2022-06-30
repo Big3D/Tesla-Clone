@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Tesla-Clone.git/static/css/main.1277b1fc.css",
-    "main.js": "/Tesla-Clone.git/static/js/main.b07990e4.js",
+    "main.css": "/Tesla-Clone.git/static/css/main.5871ceea.css",
+    "main.js": "/Tesla-Clone.git/static/js/main.85fa35bc.js",
     "static/js/787.860837ff.chunk.js": "/Tesla-Clone.git/static/js/787.860837ff.chunk.js",
     "static/media/Homepage-Model-X-Desktop-LHD.jfif": "/Tesla-Clone.git/static/media/Homepage-Model-X-Desktop-LHD.3fc6773cc0d4fa62b2f6.jfif",
     "static/media/M3-Homepage-Desktop-LHD.jfif": "/Tesla-Clone.git/static/media/M3-Homepage-Desktop-LHD.372f67ca29f5537fdd31.jfif",
@@ -15,12 +15,12 @@
     "static/media/GothamSSm-Book_Web.woff2": "/Tesla-Clone.git/static/media/GothamSSm-Book_Web.299e9ca606232b303d77.woff2",
     "static/media/GothamSSm-Light_Web.woff2": "/Tesla-Clone.git/static/media/GothamSSm-Light_Web.b0e79820df3aed09e69a.woff2",
     "index.html": "/Tesla-Clone.git/index.html",
-    "main.1277b1fc.css.map": "/Tesla-Clone.git/static/css/main.1277b1fc.css.map",
-    "main.b07990e4.js.map": "/Tesla-Clone.git/static/js/main.b07990e4.js.map",
+    "main.5871ceea.css.map": "/Tesla-Clone.git/static/css/main.5871ceea.css.map",
+    "main.85fa35bc.js.map": "/Tesla-Clone.git/static/js/main.85fa35bc.js.map",
     "787.860837ff.chunk.js.map": "/Tesla-Clone.git/static/js/787.860837ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1277b1fc.css",
-    "static/js/main.b07990e4.js"
+    "static/css/main.5871ceea.css",
+    "static/js/main.85fa35bc.js"
   ]
 }
