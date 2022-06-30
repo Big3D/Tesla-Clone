@@ -5,7 +5,7 @@
   "node": "17.8.0"
   },
   "private": true,
-  "homepage": "https://Big3D.github.io/Tesla-Clone.git",
+  "homepage": "https://Big3D.github.io/Tesla-Clone",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
