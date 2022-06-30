@@ -1,6 +1,9 @@
 {
   "name": "tesla-clone",
   "version": "0.1.0",
+  "engines": {
+  "node": "17.8.0"
+  },
   "private": true,
   "homepage": "https://Big3D.github.io/Tesla-Clone.git",
   "dependencies": {
