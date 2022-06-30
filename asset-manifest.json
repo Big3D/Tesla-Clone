@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Tesla-Clone/static/css/main.878abbee.css",
-    "main.js": "/Tesla-Clone/static/js/main.a2d94e7f.js",
+    "main.js": "/Tesla-Clone/static/js/main.31dcbc74.js",
     "static/js/787.860837ff.chunk.js": "/Tesla-Clone/static/js/787.860837ff.chunk.js",
     "static/media/Homepage-Model-X-Desktop-LHD.jfif": "/Tesla-Clone/static/media/Homepage-Model-X-Desktop-LHD.3fc6773cc0d4fa62b2f6.jfif",
     "static/media/M3-Homepage-Desktop-LHD.jfif": "/Tesla-Clone/static/media/M3-Homepage-Desktop-LHD.372f67ca29f5537fdd31.jfif",
@@ -16,11 +16,11 @@
     "static/media/GothamSSm-Light_Web.woff2": "/Tesla-Clone/static/media/GothamSSm-Light_Web.b0e79820df3aed09e69a.woff2",
     "index.html": "/Tesla-Clone/index.html",
     "main.878abbee.css.map": "/Tesla-Clone/static/css/main.878abbee.css.map",
-    "main.a2d94e7f.js.map": "/Tesla-Clone/static/js/main.a2d94e7f.js.map",
+    "main.31dcbc74.js.map": "/Tesla-Clone/static/js/main.31dcbc74.js.map",
     "787.860837ff.chunk.js.map": "/Tesla-Clone/static/js/787.860837ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.878abbee.css",
-    "static/js/main.a2d94e7f.js"
+    "static/js/main.31dcbc74.js"
   ]
 }
