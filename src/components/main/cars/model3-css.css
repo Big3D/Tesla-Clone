@@ -20,7 +20,7 @@
 }
 
 .container {
-  background-color: red;
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -46,7 +46,7 @@
 }
 
 .solarPanel {
-  background-image: url("../../img/_25-HP-SolarPanels-D.jfif");
+  background-image: url("../../img/HP-SolarPanels-D.jfif");
 }
 
 .solarRoof {
